@@ -1,0 +1,18 @@
+body {
+    background-color: #4085D9;
+    font: normal 1.5em Arial;
+}
+main {
+    max-width: 900px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+}
+main p {
+    text-align: center;
+}
+header, footer {
+    text-align: center;
+    color: white;
+}

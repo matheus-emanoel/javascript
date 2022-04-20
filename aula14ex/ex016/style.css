@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(60, 160, 255);
+    font: normal 1.5em Arial;
+    max-width: 600px;
+    max-height: 700px;
+    margin: auto;
+}
+main {
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+
+}
+h1, footer {
+    text-align: center;
+    color: white;
+}
+footer {
+    font-style: italic;
+}
+input#fim {
+    margin-left: 27px;
+}
+input#inicio {
+    margin-left: 11px;
+}

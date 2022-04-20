@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: rgba(57, 57, 255, 0.795);
+        }
+        main {
+            max-width: 600px;
+            margin: 50px auto; 
+            background-color: whitesmoke;
+            padding: 50px 100px 700px 100px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            
+        }
+        input, button, p {
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Soma</h1>
+        <div>
+            <input type="number" id="number1"> 
+            <p><strong>+</strong></p>
+            <input type="number" id="number2">
+            <button id="button">Somar</button>
+        </div>
+    </main>
+</body>
+
+<script>
+    var number1 = document.getElementById('number1')
+    var number2 = document.querySelector('#number2')
+    var btn = document.getElementById('button')
+    var tagP = document.createElement('p')
+    var div = document.getElementsByTagName('div')[0]
+
+    btn.onclick = function() {
+        var result = Number(number1.value) + Number(number2.value)
+        console.log(result);
+
+        tagP.textContent = "O resultado é " + result
+        
+        div.insertAdjacentElement("beforeend", document.body.appendChild(tagP))
+    }
+</script>
+</html>

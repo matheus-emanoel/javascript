@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(70, 142, 236);
+    font: normal 1.5em Arial;
+}
+header, footer{
+    color: white;
+    text-align: center;
+}
+main {
+    max-width: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+}
+#botao {
+    margin-bottom: 15px;
+}
+img {
+    display: block;
+    margin: auto;
+}

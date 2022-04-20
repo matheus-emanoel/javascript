@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    Velocidade do carro: <input type="number" id="velocidade"> km/h
+    <input type="button" value="Verificar" id="botao">
+
+    <script>
+        var velocidade = document.getElementById("velocidade")
+        var botao = document.getElementById("botao")
+        var mensagem = document.createElement('p')
+
+        botao.onclick = function() {
+            if(velocidade.value > 80) {
+                mensagem.innerHTML = `<p>Sua velocidade atual é de <strong>${velocidade.value}km/h</strong></p>`
+                mensagem.innerHTML += `<p>Você foi <strong>MULTADO</strong></p>`
+            } else {
+                mensagem.innerHTML = 'Você esta muito devagar... ACELERA PORRA!!!'
+            }
+
+
+            botao.insertAdjacentElement("afterend", document.body.appendChild(mensagem))
+        }
+    </script>
+</body>
+</html>
